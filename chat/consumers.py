@@ -41,8 +41,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
         print('self.channel_name: ', self.channel_name)
 
         if(action == 'new-offer') or (action =='new-answer'):
-            # in case its a new offer or answer
-            # send it to the new peer or initial offerer respectively
 
             receiver_channel_name = receive_dict['message']['receiver_channel_name']
 
